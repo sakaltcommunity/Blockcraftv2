@@ -1,0 +1,30 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "blockcraft:red",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "textures": {
+        "default": "blockcraft:textures/entity/red"
+      },
+      "geometry": "blockcraft:red",
+      "render_controllers": ["controller.render.default"]
+    },
+    "components": {
+      "minecraft:health": 55,
+      "minecraft:damage": {
+        "damage_table": {
+          "easy": 3.5,
+          "normal": 5.0,
+          "hard": 7.5
+        }
+      },
+      "minecraft:nameable": {},
+      "minecraft:behavior.mob": {
+        "behavior": "behavior.red"
+      }
+    }
+  }
+}
