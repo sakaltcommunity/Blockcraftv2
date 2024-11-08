@@ -1,0 +1,19 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "ブロッククラフト",
+    "name": "blockcraft",
+    "uuid": "d80f3620-9b00-11ef-cdbf-19bf3211a8ee",
+    "version": [0, 0, 1],
+    "min_engine_version": [1, 21, 41]
+  },
+  "modules": [
+    {
+      "description": "Sakalti mod",
+      "type": "data",
+      "uuid": "d11291a0-9b00-11ef-f5ff-2f41e629ea01",
+      "version": [0, 0, 1],
+      "min_engine_version": [1, 21, 41]
+    }
+  ]
+}
