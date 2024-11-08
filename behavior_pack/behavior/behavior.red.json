@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.41",
+  "minecraft:behavior": {
+    "mob": {
+      "priority": 1,
+      "target": {
+        "entity": "minecraft:player",
+        "behavior": "behavior.follow_player",
+        "distance": 10
+      },
+      "movement": {
+        "move_to": {
+          "target": "minecraft:player",
+          "radius": 2
+        }
+      }
+    }
+  }
+}
