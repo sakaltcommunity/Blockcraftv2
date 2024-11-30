@@ -1,0 +1,50 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "blockcraft:firemage",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "textures": {
+        "default": "blockcraft:textures/entity/red"
+      },
+      "geometry": "blockcraft:red",
+      "render_controllers": ["controller.render.default"]
+    },
+    "components": {
+      "minecraft:health": 40,
+      "minecraft:experience_reward": {
+        "on_death": {
+          "range": [4, 6]
+        }
+      },
+      "minecraft:behavior.mob": {},
+      "minecraft:movement.basic": {},
+      "minecraft:behavior.random_stroll": {
+        "priority": 1,
+        "speed_multiplier": 0.8
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 2,
+        "look_distance": 16.0
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": { "test": "is_family", "subject": "other", "value": "player" },
+            "max_dist": 16
+          }
+        ]
+      },
+      "minecraft:behavior.shoot_projectile": {
+        "priority": 4,
+        "speed": 1.5,
+        "projectile": "blockcraft:fire_particle",
+        "interval": 2.0,
+        "power": 5
+      }
+    }
+  }
+}
