@@ -16,14 +16,36 @@
       "minecraft:health": 55,
       "minecraft:damage": {
         "damage_table": {
-          "easy": 3.5,
+          "easy": 3.0,
           "normal": 5.0,
-          "hard": 7.5
+          "hard": 7.0
         }
       },
       "minecraft:nameable": {},
       "minecraft:behavior.mob": {
         "behavior": "behavior.red"
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:behavior.random_stroll": {
+        "priority": 1,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 2,
+        "look_distance": 6.0
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": { "test": "is_family", "subject": "other", "value": "player" },
+            "max_dist": 16
+          }
+        ]
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 4,
+        "damage_multiplier": 1.0
       }
     }
   }
