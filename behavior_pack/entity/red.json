@@ -30,6 +30,11 @@
           "blockcraft:red_terra_biome"
         ]
       },
+      "minecraft:experience_reward": {
+        "on_death": {
+          "range": [3, 7]
+        }
+      },
       "minecraft:nameable": {},
       "minecraft:behavior.mob": {
         "behavior": "behavior.red"
