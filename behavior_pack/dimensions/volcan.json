@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.41",
+  "dimension": {
+    "volcan": {
+      "type": "overworld",
+      "ambient_light": 0,
+      "infinity": false,
+      "height": 128,
+      "min_y": 0,
+      "max_y": 256,
+      "generator": {
+        "type": "noise",
+        "settings": {
+          "biome": "blockcraft:red_terra_biome",
+          "caves": {
+            "enabled": true,
+            "size": 2,
+            "frequency": 4
+          },
+          "noise": {
+            "scale": 0.9,
+            "elevation": {
+              "min_y": 0,
+              "max_y": 128
+            }
+          }
+        }
+      }
+    }
+  }
+}
