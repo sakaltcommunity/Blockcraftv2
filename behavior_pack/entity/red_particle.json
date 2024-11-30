@@ -1,0 +1,41 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "blockcraft:fire_particle",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:projectile": {
+        "should_bounce": false,
+        "hit_sound": "minecraft:entity.firework_rocket.blast",
+        "throw_power": 1.0
+      },
+      "minecraft:timer": {
+        "time": 60,
+        "looping": false,
+        "on_expire": {
+          "event": "minecraft:despawn"
+        }
+      },
+      "minecraft:particle": {
+        "particle_effect": "blockcraft:burn_red",
+        "size": 1.0
+      },
+      "minecraft:on_hit": {
+        "damage": 5,
+        "impact_effect": "blockcraft:burn_red",
+        "knockback": 0.5
+      }
+    },
+    "events": {
+      "minecraft:despawn": {
+        "run_command": {
+          "command": ["kill @s"]
+        }
+      }
+    }
+  }
+}
