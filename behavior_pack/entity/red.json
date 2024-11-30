@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.44",
+  "format_version": "1.21.41",
   "minecraft:entity": {
     "description": {
       "identifier": "blockcraft:red",
@@ -20,6 +20,15 @@
           "normal": 5.0,
           "hard": 7.0
         }
+      },
+      "minecraft:spawn_rules": {
+        "condition": {
+          "condition": "minecraft:match_random",
+          "probability": 0.009
+        },
+        "biomes": [
+          "blockcraft:red_terra_biome"
+        ]
       },
       "minecraft:nameable": {},
       "minecraft:behavior.mob": {
