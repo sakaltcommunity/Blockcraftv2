@@ -1,0 +1,66 @@
+{
+  "format_version": "1.21.41",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "blockcraft:powere",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "textures": {
+        "default": "blockcraft:textures/entity/red"
+      },
+      "geometry": "blockcraft:red",
+      "render_controllers": ["controller.render.default"]
+    },
+    "components": {
+      "minecraft:health": 48,
+      "minecraft:damage": {
+        "damage_table": {
+          "easy": 5.0,
+          "normal": 8.0,
+          "hard": 12.0
+        }
+      },
+      "minecraft:spawn_rules": {
+        "condition": {
+          "condition": "minecraft:match_random",
+          "probability": 0.00833
+        },
+        "biomes": [
+          "blockcraft:red_terra_biome"
+        ]
+      },
+      "minecraft:experience_reward": {
+        "on_death": {
+          "range": [5, 6]
+        }
+      },
+      "minecraft:nameable": {},
+      "minecraft:behavior.mob": {
+        "behavior": "behavior.red"
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:behavior.random_stroll": {
+        "priority": 1,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 2,
+        "look_distance": 6.0
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": { "test": "is_family", "subject": "other", "value": "player" },
+            "max_dist": 16
+          }
+        ]
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 4,
+        "damage_multiplier": 1.0
+      }
+    }
+  }
+}
