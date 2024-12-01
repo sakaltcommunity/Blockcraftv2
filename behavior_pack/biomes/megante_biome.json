@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.41",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "blockcraft:megante_biome",
+      "name": "メガンテバイオーム",
+      "ambient_color": [252, 252, 0],
+      "height": "normal",
+      "temperature": 1.2,
+      "precipitation": "none"
+    },
+    "components": {
+      "minecraft:grass_color": [236, 236, 0],
+      "minecraft:foliage_color": [0, 224, 224],
+      "minecraft:water_color": [216, 216, 4],
+      "minecraft:water_fog_color": [200, 200, 0],
+      "minecraft:top_block": "minecraft:gold_block",
+      "minecraft:fill_block": "minecraft:lava_block",
+      "minecraft:spawn_rules": {
+        "type": "custom",
+        "biome": "inflationcraft:megante_biome"
+      }
+    }
+  }
+}
