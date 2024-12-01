@@ -21,6 +21,10 @@
           "hard": 7.0
         }
       },
+      "minecraft:collision_box": {
+        "width": 1.1,
+        "height": 1.1
+      },
       "minecraft:spawn_rules": {
         "condition": {
           "condition": "minecraft:match_random",
