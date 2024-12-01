@@ -14,8 +14,8 @@
       "minecraft:foliage_color": [0, 224, 224],
       "minecraft:water_color": [216, 216, 4],
       "minecraft:water_fog_color": [200, 200, 0],
-      "minecraft:top_block": "minecraft:gold_block",
-      "minecraft:fill_block": "minecraft:lava_block",
+      "minecraft:top_block": "minecraft:gold",
+      "minecraft:fill_block": "minecraft:magma",
       "minecraft:spawn_rules": {
         "type": "custom",
         "biome": "inflationcraft:megante_biome"
