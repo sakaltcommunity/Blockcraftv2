@@ -19,6 +19,10 @@
           "range": [4, 6]
         }
       },
+      "minecraft:collision_box": {
+        "width": 0.8,
+        "height": 0.8
+      },
       "minecraft:behavior.mob": {},
       "minecraft:movement.basic": {},
       "minecraft:behavior.random_stroll": {
